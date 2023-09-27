@@ -11,13 +11,13 @@ $mascotas = $sentencia->fetchAll(PDO::FETCH_OBJ);
 ?>
 
 <?php include_once "encabezado.php" ?>
-<div class="row justify-content-center align-items-center"> <!-- Centrar el contenido horizontal y verticalmente -->
+<div class="row justify-content-center align-items-center mt-4"> <!-- Agregado el margen con mt-4 -->
     <div class="col-12">
         <h1>Listar con arreglo</h1>
         <a href="https://tecsup.instructure.com/courses/25788" target="_blank">Por Yenifer Vargas</a>
         <br>
         <div class="table-responsive">
-            <table class="table table-bordered">
+            <table class="table table-bordered table-sm"> <!-- Agregada la clase table-sm para reducir el tamaño -->
                 <thead class="thead-dark">
                     <tr>
                         <th>ID</th>

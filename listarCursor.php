@@ -16,11 +16,10 @@ $sentencia->execute();
 # Se realiza iteración
 ?>
 
-
 <?php include_once "encabezado.php" ?>
 <div class="row justify-content-center"> <!-- Centrar el contenido -->
     <div class="col-12">
-        <h1>Listar con cursor</h1>
+        <h1 class="text-center">Listar con cursor</h1>
         <a href="https://tecsup.instructure.com/courses/25788" target="_blank">Por Yenifer Vargas</a>
         <br>
         <table class="table table-bordered">
