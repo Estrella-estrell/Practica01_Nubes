@@ -1,7 +1,5 @@
 <?php
-/*
-Este archivo lista todos los datos de la tabla, obteniendo a los mismos como un arreglo
-*/
+
 ?>
 <?php
 
@@ -11,13 +9,13 @@ $mascotas = $sentencia->fetchAll(PDO::FETCH_OBJ);
 ?>
 
 <?php include_once "encabezado.php" ?>
-<div class="row justify-content-center align-items-center mt-4"> <!-- Agregado el margen con mt-4 -->
+<div class="row justify-content-center align-items-center mt-4"> 
     <div class="col-12">
         <h1>Listar con arreglo</h1>
         <a href="https://tecsup.instructure.com/courses/25788" target="_blank">Por Yenifer Vargas</a>
         <br>
         <div class="table-responsive">
-            <table class="table table-bordered table-sm"> <!-- Agregada la clase table-sm para reducir el tamaño -->
+            <table class="table table-bordered table-sm">
                 <thead class="thead-dark">
                     <tr>
                         <th>ID</th>
@@ -28,7 +26,6 @@ $mascotas = $sentencia->fetchAll(PDO::FETCH_OBJ);
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Modificación -->
                     <?php foreach($mascotas as $mascota){ ?>
                         <tr>
                             <td><?php echo $mascota->id ?></td>

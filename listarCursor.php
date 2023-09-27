@@ -1,7 +1,5 @@
 <?php
-/*
-Este archivo lista todos los datos de la tabla, pero en un ciclo usando un cursor, no a través de un arreglo (se supone que es más eficiente)
-*/
+
 ?>
 <?php
 
@@ -11,13 +9,11 @@ $consulta = "select id, nombre, edad from mascotas";
 $sentencia = $base_de_datos->prepare($consulta, [
     PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL,
 ]);
-# Ejección sin parámetros
 $sentencia->execute();
-# Se realiza iteración
 ?>
 
 <?php include_once "encabezado.php" ?>
-<div class="row justify-content-center"> <!-- Centrar el contenido -->
+<div class="row justify-content-center"> 
     <div class="col-12">
         <h1 class="text-center">Listar con cursor</h1>
         <a href="https://tecsup.instructure.com/courses/25788" target="_blank">Por Yenifer Vargas</a>
@@ -33,7 +29,6 @@ $sentencia->execute();
                 </tr>
             </thead>
             <tbody>
-                <!-- Uso de ciclo while y fetch - body intacto pero usando cursor -->
                 <?php while ($mascota = $sentencia->fetchObject()) { ?>
                     <tr>
                         <td><?php echo $mascota->id ?></td>

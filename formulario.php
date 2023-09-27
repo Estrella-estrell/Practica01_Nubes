@@ -2,7 +2,7 @@
 <div class="row">
     <div class="col-12">
         <h1 class="text-center mt-4">Agregar</h1>
-        <div class="custom-form-container"> <!-- Clase personalizada para el contenedor del formulario -->
+        <div class="custom-form-container"> 
             <form action="insertar.php" method="POST" class="custom-form mt-4 mx-auto p-4">
                 <div class="form-group">
                     <label for="nombre" class="form-label">Nombre:</label>

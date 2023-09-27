@@ -1,9 +1,7 @@
 <?php
 $contraseña = "HA23SIzJFNGvxBH68oRN";
 $usuario = "postgres";
-$nombreBaseDeDatos = "railway"; // Nombre de la base de datos
-
-// Separar la URL del servidor en sus componentes
+$nombreBaseDeDatos = "railway"; 
 $urlServidor = "containers-us-west-108.railway.app";
 $puerto = "6753";
 

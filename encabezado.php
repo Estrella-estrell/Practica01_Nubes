@@ -7,14 +7,11 @@
     <meta name="description" content="Conexión de PHP con PostgreSQL usando PDO">
     <meta name="author" content="Odenfis">
     <title>PostgreSQL-PHP | Por Yeni Vargas</title>
-    <!-- Cargar el CSS de Boostrap-->
     <link href="./bootstrap.min.css" rel="stylesheet">
-    <!-- Cargar estilos propios -->
     <link href="style.css" rel="stylesheet">
     
 
 
-<!-- header.html -->
 <link rel="stylesheet" href="style.css">
 
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-primary text-white border-bottom box-shadow">

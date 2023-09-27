@@ -11,30 +11,30 @@
     margin-top: -1.1rem;
 }
     .welcome-section {
-        background-image: url('hero.jpg'); /* Reemplaza 'hero.jpg' con la URL de tu imagen de fondo */
+        background-image: url('hero.jpg'); 
         background-size: cover;
         background-repeat: no-repeat;
         padding: 6% 0;
     }
 
-    /* Si deseas ajustar también la sección slider, puedes hacerlo así: */
+   
     .slider_section {
-        background-image: url('hero.jpg'); /* Reemplaza 'hero.jpg' con la URL de tu imagen de fondo */
+        background-image: url('hero.jpg');
         padding: 6% 0;
         background-size: cover;
         background-repeat: no-repeat;
     }
     
-        /* Estilo para los párrafos con fondo oscuro azulento */
+        
     .col-md-4.text-center p {
-        background-color: #1e4875; /* Color de fondo azul oscuro */
-        color: white; /* Texto en blanco */
-        padding: 20px; /* Espaciado interno para el cuadro */
-        border-radius: 10px; /* Bordes redondeados para el cuadro */
-        margin-top: 20px; /* Espacio superior entre los cuadros de párrafo */
+        background-color: #1e4875; 
+        color: white; 
+        padding: 20px; 
+        border-radius: 10px; 
+        margin-top: 20px; 
     }
 
-    /* Aplicar margen inferior solo al último cuadro de párrafo */
+   
     .col-md-4.text-center p:last-child {
         margin-bottom: 20px;
     }
@@ -54,19 +54,19 @@
     <div class="row">
         <div class="col-md-4 text-center">
             <i class="fas fa-check-circle fa-3x text-primary"></i>
-            <div class="paragraph-box"> <!-- Aplicar la clase paragraph-box aquí -->
+            <div class="paragraph-box"> 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </div>
         <div class="col-md-4 text-center">
             <i class="fas fa-check-circle fa-3x text-primary"></i>
-            <div class="paragraph-box"> <!-- Aplicar la clase paragraph-box aquí -->
+            <div class="paragraph-box"> 
                 <p>Sed auctor tincidunt lectus, eget tincidunt erat volutpat nec.</p>
             </div>
         </div>
         <div class="col-md-4 text-center">
             <i class="fas fa-check-circle fa-3x text-primary"></i>
-            <div class="paragraph-box"> <!-- Aplicar la clase paragraph-box aquí -->
+            <div class="paragraph-box"> 
                 <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere .</p>
             </div>
         </div>
