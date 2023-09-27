@@ -124,3 +124,11 @@ header {
   max-width: 400px; /* Ancho máximo deseado */
   margin: 0 auto; /* Centra el contenedor horizontalmente */
 }
+.col-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 2rem;
+  /* display: flex; */
+  /* justify-content: center; */
+}
