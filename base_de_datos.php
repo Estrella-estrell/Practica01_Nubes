@@ -1,5 +1,9 @@
 <?php
-$database_url = 'postgresql://postgres:HA23SIzJFNGvxBH68oRN@containers-us-west-108.railway.app:6753/railway';
+$database_url = getenv('DATABASE_URL');
+
+if ($database_url === false) {
+    die("La variable de entorno DATABASE_URL no está configurada correctamente.");
+}
 
 try {
     $db_params = parse_url($database_url);
@@ -12,7 +16,9 @@ try {
 
     $base_de_datos = new PDO("pgsql:host=$db_host;port=$db_port;dbname=$db_name", $db_user, $db_password);
     $base_de_datos->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Conexión exitosa a la base de datos.";
 } catch (PDOException $e) {
     die("Error de conexión a la base de datos: " . $e->getMessage());
 }
+
 ?>
