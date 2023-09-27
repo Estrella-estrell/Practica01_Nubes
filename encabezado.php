@@ -25,4 +25,9 @@
         
         <a class="p-2 text-white" href="listarCursor.php">Listar Cursor</a>
     </nav>
+
+    <form action="busqueda.php" method="GET" class="form-inline my-2 my-md-0">
+        <input class="form-control mr-sm-2" type="text" name="q" placeholder="Buscar..." aria-label="Buscar">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+    </form>
 </div>
