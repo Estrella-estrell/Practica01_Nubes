@@ -1,7 +1,7 @@
 <footer class=" pt-4 fixed-bottom bg-primary text-white">
     <div class="container text-center">
         <img class="mb-2" src="https://www.svgrepo.com/show/508391/uncle.svg" alt="" width="24" height="24">
-        <small class="d-block mb-3">&copy; 2023-1 Tu Nombre o Nombre de tu Empresa</small>
+        <small class="d-block mb-3">&copy; 2023-1   Practica calificada</small>
     </div>
 </footer>
 

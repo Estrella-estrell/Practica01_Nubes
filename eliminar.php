@@ -1,7 +1,4 @@
 <?php
-/*
-Este archivo elimina un dato por ID sin pedir confirmación. El ID viene de la URL
-*/
 if (!isset($_GET["id"])) {
     exit();
 }
@@ -15,3 +12,4 @@ if ($resultado === true) {
 } else {
     echo "Algo salió mal";
 }
+?>
