@@ -1,5 +1,5 @@
 <?php
-$database_url = getenv('DATABASE_URL');
+$database_url = getenv('postgresql://postgres:HA23SIzJFNGvxBH68oRN@containers-us-west-108.railway.app:6753/railway');
 
 if ($database_url === false) {
     die("La variable de entorno DATABASE_URL no está configurada correctamente.");
