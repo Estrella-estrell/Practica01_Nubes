@@ -6,33 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Conexión de PHP con PostgreSQL usando PDO">
     <meta name="author" content="Odenfis">
-    <title>PostgreSQL-PHP | Por Walter Moncada</title>
+    <title>PostgreSQL-PHP | Por Yeni Vargas</title>
     <!-- Cargar el CSS de Boostrap-->
     <link href="./bootstrap.min.css" rel="stylesheet">
     <!-- Cargar estilos propios -->
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
-<body>
-    <!-- Definición del menú -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" target="_blank" href="https://tecsup.instructure.com/courses/25788">
-        PostgreSQL-PHP | Por Walter Moncada
-        </a>
-        <div class="collapse navbar-collapse" id="miNavbar">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="./listar.php">Listar (arreglo)</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./listarCursor.php">Listar (cursor)</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./formulario.php">Agregar</a>
-                </li>
-            </ul>
-        </div>
+
+<!-- header.html -->
+<link rel="stylesheet" href="style.css">
+
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-primary text-white border-bottom box-shadow">
+    <h5 class="my-0 mr-md-auto font-weight-normal"><img src="index2.png" style="width: 30px; position: absolute;"> <span style="position: relative; left: 35px;">PostgreSQL-PHP | Por Yenifer Vargas</span></h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-white" href="index.php">Registrar</a>
+        <a class="p-2 text-white" href="listar.php">Listar Arreglo</a>
+        
+        <a class="p-2 text-white" href="listarCursor.php">Listar Cursor</a>
+        <a class="p-2 text-white" href="editar.php">Editar</a>
+        <a class="p-2 text-white" href="eliminar.php">Eliminar</a>
     </nav>
-    <!-- Termina la definición del menú -->
+</div>
+
+
     <main role="main" class="container">
         

@@ -1,8 +1,116 @@
-/*
-  Nota: si no usas el navbar, el siguiente código
-  no es necesario
-*/
-
+/* Personaliza el fondo y el color del texto de la página */
 body {
-    padding-top: 70px;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+}
+
+/* Estilo para el encabezado y el pie de página */
+.header, .footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center; /* Centra el contenido en el encabezado y el pie de página */
+}
+header {
+  background: url('fondo.jpg');
+  height: 450px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Estilo para el formulario */
+.card {
+  margin-top: 20px;
+  border: 1px solid #08f714;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(55, 246, 8, 0.1);
+  padding: 20px;
+  background-color: #148693;
+  border: 2px solid #93f0ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(153 156 159 / 50%);
+}
+.card input:focus {
+  border: 2px solid lightblue; /* Cambia 'lightblue' al color que desees */
+}
+.mt-5, .my-5 {
+  margin-top: 3rem!important;
+  margin-left: 20rem;
+}
+.form-group label {
+  font-weight: bold;
+}
+
+/* Estilo para el botón Registrar */
+.btn-primary {
+  background-color: #a70000;
+  border-color: #a70000;
+}
+
+.btn-primary:hover {
+  background-color: #b36800;
+  border-color: #b36800;
+}
+
+/* Estilo para la tabla de listar.php (puedes personalizarla según tus necesidades) */
+.table {
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc; /* Agrega un borde alrededor de la tabla */
+  border-radius: 5px; /* Agrega bordes redondeados a la tabla */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave a la tabla */
+}
+
+.table th, .table td {
+  border: 1px solid #dee2e6;
+  padding: 8px;
+}
+
+.table th {
+  background-color: #343a40;
+  color: #fff;
+}
+
+/* Estilo para el botón Editar */
+.btn-editar {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  color: #fff;
+}
+
+.btn-editar:hover {
+  background-color: #117a8b;
+  border-color: #117a8b;
+}
+/* Estilo para el formulario */
+.custom-form {
+  border: 2px solid blue; /* Cambia 'blue' al color que desees */
+  padding: 20px; /* Añade espacio alrededor del formulario */
+  border-radius: 10px; /* Agrega esquinas redondeadas */
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Efecto de sombra */
+}
+
+/* Efecto de resaltado al enfocar los campos del formulario */
+.custom-form input:focus {
+  border: 2px solid lightblue; /* Cambia 'lightblue' al color que desees */
+}
+/* Agregar una clase de flecha */
+.arrow-link {
+  position: relative;
+  padding-left: 20px; /* Espacio para la flecha */
+}
+
+.arrow-link::before {
+  content: "\2190"; /* Código Unicode para una flecha hacia la izquierda */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
