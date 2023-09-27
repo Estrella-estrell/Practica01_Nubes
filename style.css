@@ -4,7 +4,10 @@ body {
   color: #333;
   margin: 0; /* Elimina el margen predeterminado del cuerpo */
 }
-
+.bg-primary {
+  background-color: #003d7f!important;
+  color: black;
+}
 /* Estilo para el encabezado y el pie de página */
 .header, .footer {
   background-color: #343a40;
@@ -113,4 +116,11 @@ header {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+
+
+/* Estilos para el contenedor del formulario */
+.custom-form-container {
+  max-width: 400px; /* Ancho máximo deseado */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
 }
