@@ -127,8 +127,9 @@ header {
 .col-12 {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
-  max-width: 100%;
+  max-width: 80%;
   padding: 2rem;
   /* display: flex; */
   /* justify-content: center; */
+  margin-bottom: 3rem;
 }

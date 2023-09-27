@@ -14,12 +14,11 @@ if (!$mascota) {
     exit("Mascota no encontrada");
 }
 ?>
-
 <?php include_once "encabezado.php"; ?>
 <div class="row justify-content-center align-items-center">
     <div class="col-12 col-md-6">
         <h1 class="text-center">Editar</h1>
-        <form action="guardarDatosEditados.php" method="POST">
+        <form action="guardarDatosEditados.php" method="POST" class="custom-form">
             <input type="hidden" name="id" value="<?php echo $mascota->id; ?>">
             <div class="form-group">
                 <label for="nombre">Nombre</label>
@@ -36,5 +35,15 @@ if (!$mascota) {
         </form>
     </div>
 </div>
-
+<style>
+    /* Estilos personalizados para centrar el formulario y ajustar el tamaño */
+    .custom-form {
+        text-align: center;
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+</style>
 <?php include_once "pie.php"; ?>
