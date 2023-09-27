@@ -1,3 +1,4 @@
+
 <?php
 $database_url = getenv('postgresql://postgres:HA23SIzJFNGvxBH68oRN@containers-us-west-108.railway.app:6753/railway');
 if ($database_url === false) {
@@ -7,11 +8,11 @@ if ($database_url === false) {
 try {
     $db_params = parse_url($database_url);
     
-    $db_host = $db_params['containers-us-west-108.railway.app'];
-    $db_port = $db_params['6753'];
-    $db_name = ltrim($db_params['railway'], '/');
-    $db_user = $db_params['postgres'];
-    $db_password = $db_params['HA23SIzJFNGvxBH68oRN'];
+    $db_host = $db_params['host'];
+    $db_port = $db_params['port'];
+    $db_name = ltrim($db_params['path'], '/');
+    $db_user = $db_params['user'];
+    $db_password = $db_params['pass'];
 
     $pdo = new PDO("pgsql:host=$db_host;port=$db_port;dbname=$db_name", $db_user, $db_password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
